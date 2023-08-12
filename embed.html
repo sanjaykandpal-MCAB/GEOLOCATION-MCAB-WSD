@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GeoLocation</title>
+    <meta charset="utf-8" />
+    <!-- Reference to the Bing Maps SDK -->
+     <script type='text/javascript'
+        src='http://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=[YOUR_BING_MAPS_KEY]' 
+        async defer>
+      </script>
+    
+    <script type='text/javascript'>
+    
+    function GetMap()
+    {
+      var map = new Microsoft.Maps.Map('#myMap');
+      var map = new Microsoft.Maps.Map('#myMap', {
+        credentials: 'AjEswRNuFrl_rKoFVPBUHId4-Y7h5Uqj7MtrFrLglApDNLwZzHsQetESICHv7A7e',
+        center: new Microsoft.Maps.Location(51.50632, -0.12714),
+        mapTypeId: Microsoft.Maps.MapTypeId.aerial,
+        zoom: 10
+    });
+        //Add your post map load code here.
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="item-1 header">
+      <div class="header">
+        <h1 style="text-decoration: underline; font-size: 40px;">GeoLocation</h1>
+      </div> 
+      </div>
+    <div class="item-1 sidebar">
+      <h1>About geolocation</h1> 
+      <div class="para-color">
+        <p>Geolocation is the ability to track a device’s whereabouts using GPS, cell phone towers, WiFi access points or a combination of these. Since devices are used by individuals, geolocation uses positioning systems to track an individual’s whereabouts down to latitude and longitude coordinates, or more practically, a physical address. Both mobile and desktop devices can use geolocation.</p>
+      </div>
+    </div>
+    <div class="item-1 ads ">
+      <img src="https://espeo.eu/wp-content/uploads/2018/05/Fotolia_199192585_Subscription_Monthly_M.jpg" alt="advertisement" width="100%" display="inline-block"  />
+      <p class="para-color">Geolocation has also become an integral part of many social apps allowing users to leave digital markers as they use restaurants, hotels, and bars so that they can  rate their experiences and leave comments for other customers. This also provides increased levels of user engagement as most recently exampled in the huge success of Pokémon Go which showed the possibilities of augmented reality making old forms of advertising suddenly come alive. The same technology can be applied to museums, galleries and other architectural spaces to create virtual tours and even help people negotiate other public facilities such as hospitals or government buildings.</p>
+    </div>
+    <div class="item-1 main">
+      <div id="myMap"></div>
+       <p class="para-color">How geolocation and big data can be used to the advantage of your business apps Geolocation is indispensable for transportation and logistics where it is able to get the most out of the huge amount of data produced. Applications utilizing geolocation collate information about traffic jams, road works, quickest routes and allow for the communication of current locations and delivery times between the customer and the service/goods provider. For example, the client can keep track of the person who is delivering his food, and conversely a restaurant can also know exactly when the customer arrives to collect their order. Even within companies it is possible to create more realistic schedules and production timelines based on geolocation information shared between employees.</p>
+       <div>
+      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16      lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">GeoLocation</a>
+            </div>
+            <div class="group relative" >
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#" style="color: azure;">
+                  <span class="absolute inset-0 "></span>
+                  GeoLocation is very good 
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 para-color">Doesnt work on my store. It affected my conversion rates when I had the most international traffic. It was stuck on my local currency. Shopify help center helped but there isnt much they did as an immediate solution. It should be compatible worldwide since Shopify's customer base, is international.</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+              <div class="text-sm leading-6" >
+                <p class="font-semibold text-gray-900">
+                  <a href="#" style="color: white;">
+                    <span class="absolute inset-0" ></span>
+                    Sanjay kandpal
+                  </a>
+                </p>
+                <p class="text-gray-600" style="color: white;">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article> 
+          <article class="flex max-w-xl flex-col items-start justify-between">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">GeoLocation</a>
+            </div>
+            <div class="group relative" >
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#" style="color: azure;">
+                  <span class="absolute inset-0 "></span>
+                  Its Improving day by day
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 para-color">The conversion between currencies seems to be based on the main currency of the store and then calculate the exchange rate to change, am I right?
+                Is there any way to fix the price of individual products, exchange rate changes are sometimes too great, which will lead to my individual products sold at a loss</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+              <div class="text-sm leading-6" >
+                <p class="font-semibold text-gray-900">
+                  <a href="#" style="color: white;">
+                    <span class="absolute inset-0" ></span>
+                    Sanjay kandpal
+                  </a>
+                </p>
+                <p class="text-gray-600" style="color: white;">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+          <article class="flex max-w-xl flex-col items-start justify-between" style="font-size: 32px;">
+            <div class="flex items-center gap-x-4 text-xs">
+              <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
+              <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">GeoLocation</a>
+            </div>
+            <div class="group relative" >
+              <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <a href="#" style="color: azure;">
+                  <span class="absolute inset-0 "></span>
+                  New Technology
+                </a>
+              </h3>
+              <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 para-color">Hi, the pop up doesnt show up even after installing a currency converter app !!! so i have different products in different markets, but because the pop doesnt come, all products are visible to people even if its not available for sale in that market</p>
+            </div>
+            <div class="relative mt-8 flex items-center gap-x-4">
+              <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+              <div class="text-sm leading-6" >
+                <p class="font-semibold text-gray-900">
+                  <a href="#" style="color: white;">
+                    <span class="absolute inset-0" ></span>
+                    Sanjay kandpal
+                  </a>
+                </p>
+                <p class="text-gray-600" style="color: white;">Co-Founder / CTO</p>
+              </div>
+            </div>
+          </article>
+       </div> 
+     </div>  
+    </div>
+   <div class="item-1 footer">
+    <div class="card text-center" style="padding: 80px;">
+      <div class="card-body">
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-body-secondary">
+        2 days ago
+      </div>
+    </div>
+  </div>
+    <link rel="stylesheet" href="map.css">
+</body>
+</html>
